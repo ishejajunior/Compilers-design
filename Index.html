@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cases</title>
+    
+    
+    <link rel="stylesheet" href="Ind.css">
+</head>
+<body>
+
+    <header>
+        <h1>Compiler Jr.</h1>
+        <nav>
+            <ul>
+                
+                <li class="dropdown">
+                    <a href="#" onclick="selectTestCase('TestCase1')">Test Cases</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="selectTestCase('Heaven')">Easyy</a>
+                        <a href="#" onclick="selectTestCase('Evil')">Kinda Evil</a>
+                        <a href="#" onclick="selectTestCase('please dont use me!')">code breaker</a> 
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        
+        <div class="textbox-container">
+            
+            <div class="textbox">
+                <label for="inputTextarea">Input:</label>
+                <textarea id="inputTextarea" rows="15"></textarea>
+            </div>
+            
+            
+            <div class="textbox">
+                <label for="outputTextarea">Output:</label>
+                <textarea id="outputTextarea" rows="15" readonly></textarea>
+            </div>
+        </div>
+        
+        
+        <button onclick="executeCode()">Execute</button>
+    </div>
+    
+    
+    <script src="Dist/Lexer.js"></script>
+    <script src="Dist/Parser.js"></script>
+    <script src="Dist/index.js"></script>
+
+</body>
+</html>
